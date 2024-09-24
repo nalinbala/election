@@ -1,0 +1,363 @@
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1300px;
+  
+}
+
+
+.chart {
+  background-color: white;
+  border-radius: 0px;
+  padding: 20px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.candidate {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.candidate img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.details {
+  flex-grow: 1;
+}
+
+.headline{
+  font-weight: bolder;
+  font-size: 55px;
+  margin: 20px 40px;
+  color: #404040;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.bar {
+  background-color: #e0e0e0;
+  height: 10px;
+  /* border-radius: 5px; */
+  margin: 5px 0;
+  position: relative;
+  width: 100%;
+}
+
+.progress {
+  height: 10px;
+  /* border-radius: 5px; */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.red {
+  background-color: #c82c4c;
+}
+
+.yellow {
+  background-color: #98c404;
+}
+
+.green {
+  background-color: #188414;
+}
+
+.votes {
+  font-size: 17px;
+  /* font-weight: bold; */
+  color: #666;
+}
+
+.topLine{
+  width: 100%;
+  height: 279px;
+  
+  
+}
+
+ul{
+  list-style-type: none;
+  margin: 0px 0px;
+  color: #000000;
+  padding: 8px 0px;
+  font-size: 12px;
+  line-height: 15px;
+  }
+
+  ul:hover{
+    cursor:pointer;
+    }
+
+
+.holder{
+  width: 750px;
+  margin: 20px auto;
+  columns: 5;
+  column-gap: 10px;
+}
+
+.box{
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+h3{
+  text-transform: uppercase;
+  padding: 5px 8px;
+  margin: 0;
+  color:white;
+  background-color: rgb(146, 147, 147);
+  font-size: 15px;
+  border-radius:  7px 7px 0px 0px;
+ }
+
+
+li{
+  margin: 0px 4px;
+  padding: 0px 3px;
+}
+
+
+.box ul li:nth-child(odd) {
+  background-color:#dcdede;
+}
+
+.box ul li:nth-child(odd):hover {
+  background-color:#fdae05;
+  cursor:pointer;
+}
+
+
+
+
+
+
+.main{
+  width: 100%;
+  min-height: 10px;
+}
+
+.leftChild{
+  width: 55%;
+  min-height: 10px;
+  float: left;
+}
+
+.mainChild{
+  width: 30%;
+  min-height: 10px;
+  float: left;
+}
+
+.thirdChild{
+  width: 15%;
+  min-height: 10px;
+  
+  float: right;
+}
+
+
+
+.NPP {
+  fill:#c82c4c;
+  }
+
+.NPP:hover {
+  fill:#942239;
+  cursor:pointer;
+}
+
+.SJB {
+  fill:#98c404;
+  }
+
+.SJB:hover {
+  fill:#7fa308;
+  cursor:pointer;
+}
+
+.UNP {
+  fill:#188414;
+  }
+
+.UNP:hover {
+  fill:#136610;
+  cursor:pointer;
+}
+
+.APjaff  {
+  fill:#ecbb2a;
+  }
+
+.APjaff:hover {
+  fill:#ecbb2a;
+  cursor:pointer;
+}
+
+
+svg{
+  display: flex;
+  top: 0px;
+  right: 10px;
+  width: 600px;
+  height: 760px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+
+
+
+/* .seats {
+  fill:#f06107;
+  }
+
+.seats:hover  {
+  fill:#963d06;
+  } */
+  
+
+
+   .sideBox{
+    right:180px;
+    top:385px;
+    width: 240px;
+    background-color: rgb(241, 238, 238);
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin: 0,auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hideT{
+    height: 240px;
+    background-color: white;
+  }
+  .sideBox .hideh{
+    height: 10px;
+    background-color: white;
+
+  }
+  
+
+  .hideL{
+    color: white;
+  }
+
+  .sideBox h{
+  margin-bottom: 6px;
+  width: 100%;
+  padding: 15px 0px;
+  color:#000000;
+  text-align: center;
+  background-color: #fdae05;
+ font-weight: 900;
+  font-size: 18px;
+  border-radius:  7px 7px 0px 0px;
+  }
+
+  .sideBox p{
+    margin-bottom: 25px; 
+    line-height: 3px;
+    font-weight: 700; 
+  }
+
+  .sideBox .AKD{
+    color: #c82c4c;
+    margin-bottom: 25px; 
+    line-height: 3px; 
+  }
+
+  .sideBox .SP{
+    color: #98c404;
+    margin-bottom: 25px; 
+    line-height: 3px; 
+  }
+
+  .sideBox .RW{
+    color: #188414;
+    margin-bottom: 25px; 
+    line-height: 3px; 
+  }
+
+
+  .sideBox .APjaff{
+    color: #ecbb2a;
+    margin-bottom: 25px; 
+    line-height: 3px; 
+  }
+
+
+
+
+
+
+
+
+  /* Two */
+
+  /* Style for the map and interactive elements */
+  svg {
+    width: 500px;
+    height: 767px;
+}
+
+#region-list {
+    margin: 20px;
+}
+
+   /* Default color for all areas on the map */
+   .map-area {
+    
+    stroke: white;
+    
+}
+
+/* Style when an area is highlighted */
+.highlight{
+    /* fill: #220909 !important; */
+    /* z-index: 4; */
+    /* opacity: .7; */
+  stroke-width:2px ;
+  stroke: #000000;
+  /* stroke: rgb(5, 5, 5)  */
+  
+    
+
+/* Style for the list */
+.region-item {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.region-item:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+section .mapsCom img{
+  /* float: left; */
+  width: 25%;
+  padding: 20px;
+ 
+}
+section .mapsCom{
+  margin: 10px;
+  display: flex;
+  /* overflow: hidden; */
+ 
+}
